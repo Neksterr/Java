@@ -17,25 +17,23 @@ public class Tickets
         {
             double transport = budget *(1 - 0.75);
 
-            if (category.equals("Normal"))
-            {
+            if (category.equals("Normal")) {
                 double sum = numOfPeople * normalTicket;
                 if (transport > sum) {
-                    double total =Math.round(transport - sum);
-                    System.out.println("Yes! You have " + total + " leva left.");
+                    double total = transport - sum;
+                    System.out.printf("Yes! You have %.2f leva left" , total);
                 } else {
-                    double total =Math.round(sum - transport);
-                    System.out.println("Not enough money! You need " + total + " leva.");
+                    double total = sum - transport;
+                    System.out.printf("Not enough money! You need %.2f leva" , total);
                 }
-            }
-            else if (category.equals("VIP")) {
+            } else if (category.equals("VIP")) {
                 double sum = numOfPeople * vipTicket;
                 if (transport > sum) {
-                    double total = Math.round(transport - sum);
-                    System.out.println("Yes! You have " + total + " leva left.");
+                    double total = transport - sum;
+                    System.out.printf("Yes! You have %.2f leva left ",total);
                 } else {
-                    double total = Math.round(sum - transport);
-                    System.out.println("Not enough money! You need " + total + " leva.");
+                    double total = sum - transport;
+                    System.out.printf("Not enough money! You need %.2f leva" ,total );
                 }
             }
         }
@@ -43,25 +41,23 @@ public class Tickets
         if (numOfPeople <= 9 && numOfPeople>= 5) {
             double transport = budget * (1 - 0.60);
 
-            if (category.equals("Normal"))
-            {
+            if (category.equals("Normal")) {
                 double sum = numOfPeople * normalTicket;
                 if (transport > sum) {
-                    double total =Math.round(transport - sum);
-                    System.out.println("Yes! You have " + total + " leva left.");
+                    double total = transport - sum;
+                    System.out.printf("Yes! You have %.2f leva left" , total);
                 } else {
-                    double total =Math.round(sum - transport);
-                    System.out.println("Not enough money! You need " + total + " leva.");
+                    double total = sum - transport;
+                    System.out.printf("Not enough money! You need %.2f leva" , total);
                 }
-            }
-            else if (category.equals("VIP")) {
+            } else if (category.equals("VIP")) {
                 double sum = numOfPeople * vipTicket;
                 if (transport > sum) {
-                    double total = Math.round(transport - sum);
-                    System.out.println("Yes! You have " + total + " leva left.");
+                    double total = transport - sum;
+                    System.out.printf("Yes! You have %.2f leva left ",total);
                 } else {
-                    double total = Math.round(sum - transport);
-                    System.out.println("Not enough money! You need " + total + " leva.");
+                    double total = sum - transport;
+                    System.out.printf("Not enough money! You need %.2f leva" ,total );
                 }
             }
         }
@@ -69,25 +65,23 @@ public class Tickets
         if (numOfPeople <= 24 && numOfPeople >= 10) {
             double transport = budget * (1 - 0.50);
 
-            if (category.equals("Normal"))
-            {
+            if (category.equals("Normal")) {
                 double sum = numOfPeople * normalTicket;
                 if (transport > sum) {
-                    double total =Math.round(transport - sum);
-                    System.out.println("Yes! You have " + total + " leva left.");
+                    double total = transport - sum;
+                    System.out.printf("Yes! You have %.2f leva left" , total);
                 } else {
-                    double total =Math.round(sum - transport);
-                    System.out.println("Not enough money! You need " + total + " leva.");
+                    double total = sum - transport;
+                    System.out.printf("Not enough money! You need %.2f leva" , total);
                 }
-            }
-            else if (category.equals("VIP")) {
+            } else if (category.equals("VIP")) {
                 double sum = numOfPeople * vipTicket;
                 if (transport > sum) {
-                    double total = Math.round(transport - sum);
-                    System.out.println("Yes! You have " + total + " leva left.");
+                    double total = transport - sum;
+                    System.out.printf("Yes! You have %.2f leva left ",total);
                 } else {
-                    double total = Math.round(sum - transport);
-                    System.out.println("Not enough money! You need " + total + " leva.");
+                    double total = sum - transport;
+                    System.out.printf("Not enough money! You need %.2f leva" ,total );
                 }
             }
         }
@@ -95,25 +89,23 @@ public class Tickets
         if (numOfPeople <= 49 && numOfPeople >= 25) {
             double transport = budget * (1 - 0.40);
 
-            if (category.equals("Normal"))
-            {
+            if (category.equals("Normal")) {
                 double sum = numOfPeople * normalTicket;
                 if (transport > sum) {
-                    double total =Math.round(transport - sum);
-                    System.out.println("Yes! You have " + total + " leva left.");
+                    double total = transport - sum;
+                    System.out.printf("Yes! You have %.2f leva left" , total);
                 } else {
-                    double total =Math.round(sum - transport);
-                    System.out.println("Not enough money! You need " + total + " leva.");
+                    double total = sum - transport;
+                    System.out.printf("Not enough money! You need %.2f leva" , total);
                 }
-            }
-            else if (category.equals("VIP")) {
+            } else if (category.equals("VIP")) {
                 double sum = numOfPeople * vipTicket;
                 if (transport > sum) {
-                    double total = Math.round(transport - sum);
-                    System.out.println("Yes! You have " + total + " leva left.");
+                    double total = transport - sum;
+                    System.out.printf("Yes! You have %.2f leva left ",total);
                 } else {
-                    double total = Math.round(sum - transport);
-                    System.out.println("Not enough money! You need " + total + " leva.");
+                    double total = sum - transport;
+                    System.out.printf("Not enough money! You need %.2f leva" ,total );
                 }
             }
         }
@@ -121,25 +113,23 @@ public class Tickets
         if ( numOfPeople >= 50) {
             double transport = budget * (1 - 0.25);
 
-            if (category.equals("Normal"))
-            {
+            if (category.equals("Normal")) {
                 double sum = numOfPeople * normalTicket;
                 if (transport > sum) {
-                    double total =Math.round(transport - sum);
-                    System.out.println("Yes! You have " + total + " leva left.");
+                    double total = transport - sum;
+                    System.out.printf("Yes! You have %.f2 leva left" , total);
                 } else {
-                    double total =Math.round(sum - transport);
-                    System.out.println("Not enough money! You need " + total + " leva.");
+                    double total = sum - transport;
+                    System.out.printf("Not enough money! You need %.2f leva" , total);
                 }
-            }
-            else if (category.equals("VIP")) {
+            } else if (category.equals("VIP")) {
                 double sum = numOfPeople * vipTicket;
                 if (transport > sum) {
-                    double total = Math.round(transport - sum);
-                    System.out.println("Yes! You have " + total + " leva left.");
+                    double total = transport - sum;
+                    System.out.printf("Yes! You have %.2f leva left ",total);
                 } else {
-                    double total = Math.round(sum - transport);
-                    System.out.println("Not enough money! You need " + total + " leva.");
+                    double total = sum - transport;
+                    System.out.printf("Not enough money! You need %.2f leva" ,total );
                 }
             }
         }
