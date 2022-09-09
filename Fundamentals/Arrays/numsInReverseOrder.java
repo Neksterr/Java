@@ -1,0 +1,16 @@
+import java.util.*;
+public class printReverseNums {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = Integer.parseInt(scan.nextLine());
+        int[] numbers = new int[n];
+        for(int i = 0 ; i < n; i ++){
+            int number = Integer.parseInt(scan.nextLine());
+        numbers[i] = number;
+        }
+        for(int i = numbers.length -1 ; i >=0 ; i--){
+            System.out.printf("%d ", numbers[i]);
+        }
+    }
+    
+}
