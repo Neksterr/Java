@@ -25,8 +25,11 @@ public class computerStore {
             }
         }
         total = totalWithoutTaxes + taxes;
+        if(total == 0){
+            System.out.println("Invalid order!");
+        }
 
-        if (command.equals("special")) {
+        else if (command.equals("special")) {
             total = total - (total * 0.1);
             System.out.printf(
                     "Congratulations you've just bought a new computer!\n Price without taxes: %.2f$\n Taxes: %.2f$\n -----------\n Total price: %.2f$\n",
