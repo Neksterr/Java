@@ -70,7 +70,7 @@ public class needForSpeed {
                     } else {
                         carMap.get(name).setMileage(carMap.get(name).getMileage() + distance);
                         carMap.get(name).setFuel(carMap.get(name).getFuel() - fuel1);
-                        System.out.printf("%s driven for %d kilometers. %d liters of fuel consumed.", name,distance,fuel1);
+                        System.out.printf("%s driven for %d kilometers. %d liters of fuel consumed.%n", name,distance,fuel1);
                     }
                     if (carMap.get(name).getMileage() >= 100000) {
                         carMap.remove(name);
@@ -80,8 +80,8 @@ public class needForSpeed {
 
                 case "Refuel":
                     // • "Refuel : {car} : {fuel}":
-                    int fuelRefill = Integer.parseInt(data[1]);
-                    if(carMap.get(name).fuel + fuelRefill < 75){
+                    int fuelRefill = Integer.parseInt(data[2]);
+                    if(carMap.get(name).getFuel() + fuelRefill > 75){
                         System.out.printf("%s refueled with %d liters%n"
                                 , name, 75 - carMap.get(name).getFuel());
                         carMap.get(name).setFuel(75);
@@ -94,7 +94,7 @@ public class needForSpeed {
 
                 case "Revert":
                     // • "Revert : {car} : {kilometers}":
-                    int revertMileage = Integer.parseInt(data[1]);
+                    int revertMileage = Integer.parseInt(data[2]);
                     if(carMap.get(name).mileage - revertMileage > 10000){
                         carMap.get(name).setMileage(carMap.get(name).getMileage() - revertMileage);
                         System.out.printf("%s mileage decreased by %d kilometers%n", name, revertMileage);
